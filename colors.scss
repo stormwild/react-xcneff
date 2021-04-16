@@ -1,0 +1,21 @@
+@function hexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+
+$color-primary: #16498a;
+$color-secondary: #12284c;
+$color-tertiary: #27add5;
+$color-danger: #d63939;
+
+
+:root {
+  --color-primary: #{$color-primary};
+  --color-secondary: #{$color-secondary};
+  --color-tertiary: #{$color-tertiary};
+  --color-danger: #{$color-danger};
+  
+  --color-primary--rgb: #{hexToRGB($color-primary)};
+  --color-secondary--rgb: #{hexToRGB($color-secondary)};
+  --color-tertiary--rgb: #{hexToRGB($color-tertiary)};
+  --color-danger--rgb: #{hexToRGB($color-danger)};
+}

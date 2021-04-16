@@ -1,0 +1,58 @@
+@import 'colors.scss';
+
+
+.card-deck {
+  display: flex;
+  flex-wrap: wrap;
+  
+  margin: 5rem;
+}
+
+.card {
+  // border-radius: 4px;
+  background-color: #f9f9f9;
+  width: 50px;
+  height: 50px;
+  
+  border: 1px solid rgba(var(--color-secondary--rgb), .1);
+  
+  &.added {
+    background-color: var(--color-primary);
+
+    &.added-10 {
+      background-color: rgba(var(--color-primary--rgb), .4);
+    }
+
+    &.added-20 {
+      background-color: rgba(var(--color-primary--rgb), .5);
+    }
+    
+    &.added-50 {
+      background-color: rgba(var(--color-primary--rgb), .8);
+    }
+
+        &.added-70 {
+      background-color: rgba(var(--color-primary--rgb), 1);
+    }
+  }
+  
+  &.removed {
+    background-color: var(--color-danger);
+
+    &.removed-10 {
+      background-color: rgba(var(--color-danger--rgb), .4);
+    }
+
+    &.removed-20 {
+      background-color: rgba(var(--color-danger--rgb), .5);
+    }
+    
+    &.removed-50 {
+      background-color: rgba(var(--color-danger--rgb), .8);
+    }
+
+    &.removed-70 {
+      background-color: rgba(var(--color-danger--rgb), 1);
+    }
+  }
+}
